@@ -1,0 +1,43 @@
+name: Publish release
+
+on:
+  push:
+    tags: ['v[0-9]*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Verify version matches tag
+        run: |
+          python - <<'PY'
+          import os, tomllib
+          with open('pyproject.toml', 'rb') as f:
+              version = tomllib.load(f)['project']['version']
+          if os.environ['GITHUB_REF_NAME'] != 'v' + version:
+              raise SystemExit('Run this workflow on the tag matching pyproject.toml')
+          PY
+      - run: python -m pip install 'uv==0.11.7'
+      - run: ./scripts/test.sh
+      - run: uvx --from shellcheck-py shellcheck install.sh bootstrap.sh start.sh scripts/test.sh scripts/publish_release.sh
+      - run: .venv/bin/python scripts/build_installer.py
+      - name: Publish installer and checksum together
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+          REPOSITORY: ${{ github.repository }}
+        run: bash scripts/publish_release.sh

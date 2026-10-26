@@ -1,0 +1,21 @@
+.venv/
+.env
+.env.*
+*.env
+!.env.example
+*.sqlite*
+*.db
+*.db-wal
+*.db-shm
+*.pem
+*.key
+# User-supplied reference images stay local.
+bot.png
+photo_*.jpg
+data/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/

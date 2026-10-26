@@ -1,0 +1,283 @@
+{
+  "started_utc": "2026-10-20T17:29:34.516000+00:00",
+  "duration_seconds": 721.226,
+  "source": "https://api.rh.lighter.xyz",
+  "fee_schedule": "rh-2026-10-20",
+  "telegram_delivery_tested": false,
+  "markets": [
+    {
+      "id": 10,
+      "symbol": "AAPL",
+      "kind": "perp"
+    },
+    {
+      "id": 56,
+      "symbol": "AMC",
+      "kind": "perp"
+    },
+    {
+      "id": 29,
+      "symbol": "AMD",
+      "kind": "perp"
+    },
+    {
+      "id": 11,
+      "symbol": "AMZN",
+      "kind": "perp"
+    },
+    {
+      "id": 38,
+      "symbol": "ANTHROPIC",
+      "kind": "perp"
+    },
+    {
+      "id": 47,
+      "symbol": "ASTS",
+      "kind": "perp"
+    },
+    {
+      "id": 19,
+      "symbol": "BABA",
+      "kind": "perp"
+    },
+    {
+      "id": 20,
+      "symbol": "BE",
+      "kind": "perp"
+    },
+    {
+      "id": 48,
+      "symbol": "CLSK",
+      "kind": "perp"
+    },
+    {
+      "id": 23,
+      "symbol": "COIN",
+      "kind": "perp"
+    },
+    {
+      "id": 24,
+      "symbol": "CRCL",
+      "kind": "perp"
+    },
+    {
+      "id": 33,
+      "symbol": "CRWV",
+      "kind": "perp"
+    },
+    {
+      "id": 12,
+      "symbol": "GOOGL",
+      "kind": "perp"
+    },
+    {
+      "id": 30,
+      "symbol": "INTC",
+      "kind": "perp"
+    },
+    {
+      "id": 49,
+      "symbol": "IREN",
+      "kind": "perp"
+    },
+    {
+      "id": 50,
+      "symbol": "LUNR",
+      "kind": "perp"
+    },
+    {
+      "id": 13,
+      "symbol": "META",
+      "kind": "perp"
+    },
+    {
+      "id": 14,
+      "symbol": "MSFT",
+      "kind": "perp"
+    },
+    {
+      "id": 31,
+      "symbol": "MU",
+      "kind": "perp"
+    },
+    {
+      "id": 15,
+      "symbol": "NVDA",
+      "kind": "perp"
+    },
+    {
+      "id": 42,
+      "symbol": "OPENAI",
+      "kind": "perp"
+    },
+    {
+      "id": 17,
+      "symbol": "ORCL",
+      "kind": "perp"
+    },
+    {
+      "id": 34,
+      "symbol": "PLTR",
+      "kind": "perp"
+    },
+    {
+      "id": 51,
+      "symbol": "QBTS",
+      "kind": "perp"
+    },
+    {
+      "id": 52,
+      "symbol": "RGTI",
+      "kind": "perp"
+    },
+    {
+      "id": 43,
+      "symbol": "SHEIN",
+      "kind": "perp"
+    },
+    {
+      "id": 37,
+      "symbol": "SKHY",
+      "kind": "perp"
+    },
+    {
+      "id": 53,
+      "symbol": "SMCI",
+      "kind": "perp"
+    },
+    {
+      "id": 32,
+      "symbol": "SNDK",
+      "kind": "perp"
+    },
+    {
+      "id": 54,
+      "symbol": "SOFI",
+      "kind": "perp"
+    },
+    {
+      "id": 18,
+      "symbol": "SPCX",
+      "kind": "perp"
+    },
+    {
+      "id": 16,
+      "symbol": "TSLA",
+      "kind": "perp"
+    },
+    {
+      "id": 46,
+      "symbol": "TSM",
+      "kind": "perp"
+    },
+    {
+      "id": 55,
+      "symbol": "WULF",
+      "kind": "perp"
+    }
+  ],
+  "unique_fills_inserted": 6326,
+  "fee_observations": {
+    "maker:standard": 2631,
+    "taker:standard": 5776,
+    "premium_fills": 3881,
+    "maker:premium": 3647,
+    "taker:premium": 532,
+    "maker:plus": 48,
+    "taker:plus": 18
+  },
+  "invalid_events": 0,
+  "reconnects": 0,
+  "samples": [
+    {
+      "id": "1867825979",
+      "market_id": 10,
+      "timestamp_ms": 1792517376785,
+      "usd_micros": 35813400,
+      "maker_account": 45959,
+      "taker_account": 37353,
+      "maker_tier": "standard",
+      "taker_tier": "standard",
+      "is_maker_ask": true,
+      "maker_fee": 0,
+      "taker_fee": 0
+    },
+    {
+      "id": "1867827317",
+      "market_id": 38,
+      "timestamp_ms": 1792517381488,
+      "usd_micros": 87501666,
+      "maker_account": 4334,
+      "taker_account": 281474976709414,
+      "maker_tier": "premium",
+      "taker_tier": "standard",
+      "is_maker_ask": true,
+      "maker_fee": 117,
+      "taker_fee": 0
+    },
+    {
+      "id": "1867827316",
+      "market_id": 38,
+      "timestamp_ms": 1792517381488,
+      "usd_micros": 74802924,
+      "maker_account": 39497,
+      "taker_account": 281474976709414,
+      "maker_tier": "standard",
+      "taker_tier": "standard",
+      "is_maker_ask": true,
+      "maker_fee": 0,
+      "taker_fee": 0
+    },
+    {
+      "id": "1867827315",
+      "market_id": 38,
+      "timestamp_ms": 1792517381488,
+      "usd_micros": 592911752,
+      "maker_account": 23862,
+      "taker_account": 281474976709414,
+      "maker_tier": "premium",
+      "taker_tier": "standard",
+      "is_maker_ask": true,
+      "maker_fee": 96,
+      "taker_fee": 0
+    },
+    {
+      "id": "1867827313",
+      "market_id": 38,
+      "timestamp_ms": 1792517381488,
+      "usd_micros": 35334638,
+      "maker_account": 23862,
+      "taker_account": 20528,
+      "maker_tier": "premium",
+      "taker_tier": "standard",
+      "is_maker_ask": true,
+      "maker_fee": 96,
+      "taker_fee": 0
+    },
+    {
+      "id": "1867827322",
+      "market_id": 24,
+      "timestamp_ms": 1792517381488,
+      "usd_micros": 499899880,
+      "maker_account": 39,
+      "taker_account": 281474976710220,
+      "maker_tier": "premium",
+      "taker_tier": "standard",
+      "is_maker_ask": false,
+      "maker_fee": 84,
+      "taker_fee": 0
+    }
+  ],
+  "last_health": {
+    "at_ms": 1792518091673,
+    "connected": true,
+    "markets": 34,
+    "subscribed": 34,
+    "ready_markets": 34,
+    "inserted": 6289,
+    "reconnects": 0,
+    "invalid": 0,
+    "last_error": ""
+  },
+  "alerts_created": 3
+}

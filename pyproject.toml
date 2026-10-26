@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rh-prem-bot"
+version = "1.2.0"
+description = "Lighter on Robinhood Chain premium volume alerts for Telegram"
+requires-python = ">=3.12"
+dependencies = ["aiohttp>=3.12,<4", "python-dotenv>=1.1,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-asyncio>=1,<2", "ruff>=0.12,<1"]
+
+[project.scripts]
+rh-prem-bot = "rh_prem_bot.__main__:main"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC"]
+
+[tool.ruff.lint.per-file-ignores]
+# Poll durable SQLite state in async tests; there is no production Event to await.
+"tests/test_telegram_app.py" = ["ASYNC110"]

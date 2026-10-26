@@ -1,0 +1,405 @@
+{
+  "started_utc": "2026-10-20T17:36:31.769000+00:00",
+  "duration_seconds": 151.174,
+  "source": "https://api.rh.lighter.xyz",
+  "fee_schedule": "rh-2026-10-20",
+  "configuration": {
+    "markets": [],
+    "market_types": [
+      "perp"
+    ],
+    "rwa_categories": [
+      "STOCK",
+      "PRE_IPO"
+    ],
+    "window_seconds": 60,
+    "baseline_minutes": 2,
+    "warmup_minutes": 1,
+    "spike_multiplier": 0.0001,
+    "min_premium_usd": 1.0,
+    "min_premium_share": 0.0,
+    "min_premium_accounts": 1,
+    "baseline_floor_usd": 1.0,
+    "cooldown_seconds": 300,
+    "flow_direction": "maker_taker"
+  },
+  "telegram_delivery_tested": false,
+  "markets": [
+    {
+      "id": 10,
+      "symbol": "AAPL",
+      "kind": "perp"
+    },
+    {
+      "id": 56,
+      "symbol": "AMC",
+      "kind": "perp"
+    },
+    {
+      "id": 29,
+      "symbol": "AMD",
+      "kind": "perp"
+    },
+    {
+      "id": 11,
+      "symbol": "AMZN",
+      "kind": "perp"
+    },
+    {
+      "id": 38,
+      "symbol": "ANTHROPIC",
+      "kind": "perp"
+    },
+    {
+      "id": 47,
+      "symbol": "ASTS",
+      "kind": "perp"
+    },
+    {
+      "id": 19,
+      "symbol": "BABA",
+      "kind": "perp"
+    },
+    {
+      "id": 20,
+      "symbol": "BE",
+      "kind": "perp"
+    },
+    {
+      "id": 48,
+      "symbol": "CLSK",
+      "kind": "perp"
+    },
+    {
+      "id": 23,
+      "symbol": "COIN",
+      "kind": "perp"
+    },
+    {
+      "id": 24,
+      "symbol": "CRCL",
+      "kind": "perp"
+    },
+    {
+      "id": 33,
+      "symbol": "CRWV",
+      "kind": "perp"
+    },
+    {
+      "id": 12,
+      "symbol": "GOOGL",
+      "kind": "perp"
+    },
+    {
+      "id": 30,
+      "symbol": "INTC",
+      "kind": "perp"
+    },
+    {
+      "id": 49,
+      "symbol": "IREN",
+      "kind": "perp"
+    },
+    {
+      "id": 50,
+      "symbol": "LUNR",
+      "kind": "perp"
+    },
+    {
+      "id": 13,
+      "symbol": "META",
+      "kind": "perp"
+    },
+    {
+      "id": 14,
+      "symbol": "MSFT",
+      "kind": "perp"
+    },
+    {
+      "id": 31,
+      "symbol": "MU",
+      "kind": "perp"
+    },
+    {
+      "id": 15,
+      "symbol": "NVDA",
+      "kind": "perp"
+    },
+    {
+      "id": 42,
+      "symbol": "OPENAI",
+      "kind": "perp"
+    },
+    {
+      "id": 17,
+      "symbol": "ORCL",
+      "kind": "perp"
+    },
+    {
+      "id": 34,
+      "symbol": "PLTR",
+      "kind": "perp"
+    },
+    {
+      "id": 51,
+      "symbol": "QBTS",
+      "kind": "perp"
+    },
+    {
+      "id": 52,
+      "symbol": "RGTI",
+      "kind": "perp"
+    },
+    {
+      "id": 43,
+      "symbol": "SHEIN",
+      "kind": "perp"
+    },
+    {
+      "id": 37,
+      "symbol": "SKHY",
+      "kind": "perp"
+    },
+    {
+      "id": 53,
+      "symbol": "SMCI",
+      "kind": "perp"
+    },
+    {
+      "id": 32,
+      "symbol": "SNDK",
+      "kind": "perp"
+    },
+    {
+      "id": 54,
+      "symbol": "SOFI",
+      "kind": "perp"
+    },
+    {
+      "id": 18,
+      "symbol": "SPCX",
+      "kind": "perp"
+    },
+    {
+      "id": 16,
+      "symbol": "TSLA",
+      "kind": "perp"
+    },
+    {
+      "id": 46,
+      "symbol": "TSM",
+      "kind": "perp"
+    },
+    {
+      "id": 55,
+      "symbol": "WULF",
+      "kind": "perp"
+    }
+  ],
+  "unique_fills_inserted": 1442,
+  "fee_observations": {
+    "maker:standard": 543,
+    "taker:standard": 1289,
+    "premium_fills": 911,
+    "maker:premium": 856,
+    "taker:premium": 146,
+    "taker:plus": 7,
+    "maker:plus": 43
+  },
+  "invalid_events": 0,
+  "reconnects": 0,
+  "samples": [
+    {
+      "id": "1868011515",
+      "market_id": 10,
+      "timestamp_ms": 1792517794403,
+      "usd_micros": 213277324,
+      "maker_account": 45261,
+      "taker_account": 39460,
+      "maker_tier": "standard",
+      "taker_tier": "standard",
+      "is_maker_ask": false,
+      "maker_fee": 0,
+      "taker_fee": 0
+    },
+    {
+      "id": "1868011874",
+      "market_id": 29,
+      "timestamp_ms": 1792517795301,
+      "usd_micros": 299937273,
+      "maker_account": 281474976710620,
+      "taker_account": 39786,
+      "maker_tier": "premium",
+      "taker_tier": "standard",
+      "is_maker_ask": true,
+      "maker_fee": 84,
+      "taker_fee": 0
+    },
+    {
+      "id": "1868012301",
+      "market_id": 38,
+      "timestamp_ms": 1792517796224,
+      "usd_micros": 19278000,
+      "maker_account": 4334,
+      "taker_account": 24796,
+      "maker_tier": "premium",
+      "taker_tier": "premium",
+      "is_maker_ask": true,
+      "maker_fee": 117,
+      "taker_fee": 341
+    },
+    {
+      "id": "1868012394",
+      "market_id": 38,
+      "timestamp_ms": 1792517796335,
+      "usd_micros": 53011750,
+      "maker_account": 42008,
+      "taker_account": 43820,
+      "maker_tier": "standard",
+      "taker_tier": "standard",
+      "is_maker_ask": false,
+      "maker_fee": 0,
+      "taker_fee": 0
+    },
+    {
+      "id": "1868012393",
+      "market_id": 38,
+      "timestamp_ms": 1792517796335,
+      "usd_micros": 11816801,
+      "maker_account": 281474976709505,
+      "taker_account": 43820,
+      "maker_tier": "premium",
+      "taker_tier": "standard",
+      "is_maker_ask": false,
+      "maker_fee": 120,
+      "taker_fee": 0
+    },
+    {
+      "id": "1868012392",
+      "market_id": 38,
+      "timestamp_ms": 1792517796335,
+      "usd_micros": 11971017,
+      "maker_account": 281474976709571,
+      "taker_account": 43820,
+      "maker_tier": "premium",
+      "taker_tier": "standard",
+      "is_maker_ask": false,
+      "maker_fee": 120,
+      "taker_fee": 0
+    }
+  ],
+  "last_health": {
+    "at_ms": 1792517938113,
+    "connected": true,
+    "markets": 34,
+    "subscribed": 34,
+    "ready_markets": 34,
+    "inserted": 1381,
+    "reconnects": 0,
+    "invalid": 0,
+    "last_error": ""
+  },
+  "alerts_created": 20,
+  "alert_samples": [
+    {
+      "market_id": 10,
+      "symbol": "AAPL",
+      "end_ms": 1792517918078,
+      "window_seconds": 60,
+      "total_usd": 5443.547924,
+      "premium_usd": 3242.285855,
+      "premium_per_minute": 3242.285855,
+      "total_per_minute": 5443.547924,
+      "baseline_per_minute": 3311.159441437745,
+      "ratio": 0.9791995560298844,
+      "share": 0.5956199707005647,
+      "premium_accounts": [
+        6611
+      ],
+      "flows": {
+        "premium->standard": 3242.285855
+      },
+      "account_volumes": [
+        [
+          6611,
+          3242.285855
+        ]
+      ],
+      "trade_count": 8,
+      "unknown_usd": 0.0,
+      "baseline_seconds": 63.377,
+      "ready": true,
+      "flow_direction": "maker_taker"
+    },
+    {
+      "market_id": 29,
+      "symbol": "AMD",
+      "end_ms": 1792517918078,
+      "window_seconds": 60,
+      "total_usd": 799.678962,
+      "premium_usd": 799.678962,
+      "premium_per_minute": 799.678962,
+      "total_per_minute": 799.678962,
+      "baseline_per_minute": 286.113235186569,
+      "ratio": 2.794973680537863,
+      "share": 1.0,
+      "premium_accounts": [
+        3849,
+        281474976710620
+      ],
+      "flows": {
+        "premium->standard": 799.678962
+      },
+      "account_volumes": [
+        [
+          3849,
+          499.762548
+        ],
+        [
+          281474976710620,
+          299.916414
+        ]
+      ],
+      "trade_count": 2,
+      "unknown_usd": 0.0,
+      "baseline_seconds": 62.899,
+      "ready": true,
+      "flow_direction": "maker_taker"
+    },
+    {
+      "market_id": 11,
+      "symbol": "AMZN",
+      "end_ms": 1792517918078,
+      "window_seconds": 60,
+      "total_usd": 16983.154486,
+      "premium_usd": 6623.710156,
+      "premium_per_minute": 6623.710156,
+      "total_per_minute": 16983.154486,
+      "baseline_per_minute": 476.0241237607165,
+      "ratio": 13.914652273651464,
+      "share": 0.39001648141752643,
+      "premium_accounts": [
+        39,
+        6611
+      ],
+      "flows": {
+        "premium->standard": 6623.710156
+      },
+      "account_volumes": [
+        [
+          6611,
+          6328.126116
+        ],
+        [
+          39,
+          295.58404
+        ]
+      ],
+      "trade_count": 23,
+      "unknown_usd": 0.0,
+      "baseline_seconds": 62.637,
+      "ready": true,
+      "flow_direction": "maker_taker"
+    }
+  ]
+}
